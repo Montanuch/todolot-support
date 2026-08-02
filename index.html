@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TodoLot — Privacy Policy</title>
+<style>
+  :root {
+    color-scheme: light dark;
+    --text: #1d1d1f;
+    --secondary: #6e6e73;
+    --accent: #f29500;
+    --bg: #ffffff;
+    --rule: #e5e5ea;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --text: #f5f5f7; --secondary: #a1a1a6; --bg: #121212; --rule: #333336; }
+  }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--text);
+    background: var(--bg);
+    margin: 0 auto;
+    max-width: 42rem;
+    padding: 2.5rem 1.25rem 4rem;
+    line-height: 1.6;
+  }
+  h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
+  h2 { font-size: 1.2rem; margin-top: 2.2rem; }
+  .meta { color: var(--secondary); margin-top: 0; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul { padding-left: 1.2rem; }
+  li { margin: 0.35rem 0; }
+  footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--secondary); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+
+<h1>TodoLot Privacy Policy</h1>
+<p class="meta">Effective date: August 3, 2026</p>
+
+<p>TodoLot is a voice-to-alarm to-do app for iOS made by an independent developer.
+Your tasks live on your device. There is no sign-up, no advertising, and your
+data is never sold. This page describes exactly what leaves your device, where
+it goes, and why.</p>
+
+<h2>What the app processes, and where</h2>
+
+<h3>Microphone and speech recognition</h3>
+<p>When you dictate tasks, your speech is transcribed by Apple’s built-in iOS
+speech recognition, with your permission. Depending on your device and language,
+Apple may process the audio on the device or on Apple’s servers — see
+<a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.
+Your audio never reaches our servers or any other third party.</p>
+
+<h3>Turning dictation into tasks</h3>
+<p>The <em>text</em> of your dictation (never the audio) is sent over an encrypted
+connection to an AI service — <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>
+or <a href="https://openai.com/policies/privacy-policy/">OpenAI</a> — which splits
+it into individual tasks and times. Along with the text, the request includes
+your dictation language, timezone, the current time, and the names of your task
+groups (so the AI can sort tasks into them). Requests may be routed through our
+lightweight relay server (hosted on
+<a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>), which keeps
+API credentials off your device and enforces a daily rate limit using a random
+device identifier — a UUID generated on your device that is not linked to your
+name, email, or any account; its daily counters expire and are deleted
+automatically within 48 hours. We do not store or log your dictation text.</p>
+
+<h3>Natural alarm voice</h3>
+<p>If the natural alarm voice is enabled, the text of an alarm phrase (and of
+the morning briefing) is sent over an encrypted connection to
+<a href="https://elevenlabs.io/privacy">ElevenLabs</a>, which generates the audio.
+The generated audio is cached on your device so the same phrase is not sent
+twice. If the natural voice is turned off, or the network is unavailable, the
+voice is generated entirely on your device using Apple’s built-in text-to-speech.</p>
+
+<h3>Anonymous identifier, usage analytics, and crash reports</h3>
+<p>On first launch the app creates an anonymous user ID via
+<a href="https://firebase.google.com/support/privacy">Google Firebase</a>
+Authentication. It is a random identifier — no name, email, or password is ever
+asked for or collected. The app uses Firebase Analytics to understand how the
+app is used (events like app opens and screen views, plus device model, OS
+version, and coarse region — including steps of the setup and purchase flow,
+never the content of your tasks) and Firebase Crashlytics to receive crash reports.
+This data is linked to the anonymous ID, not to your identity, and is used only
+to improve the app.</p>
+
+<h3>Purchases</h3>
+<p>Billing is handled entirely by Apple through the App Store — we never see
+your payment details. To reliably unlock your subscription across reinstalls,
+the app records subscription status (which plan is active and its renewal
+state, nothing more) with
+<a href="https://www.revenuecat.com/privacy">RevenueCat</a>, keyed to the same
+anonymous ID.</p>
+
+<h3>Tasks, alarms, and settings</h3>
+<p>Your tasks, alarm times, checklists, groups, and settings are stored locally
+on your device. If you use iCloud or device backups, this local data may be
+included in your backups, which are managed by Apple.</p>
+
+<h2>What we don’t do</h2>
+<ul>
+  <li>No sign-up: we never ask for your name, email, or phone number.</li>
+  <li>No advertising and no ad networks.</li>
+  <li>No selling or sharing of personal data for marketing.</li>
+  <li>Your dictation audio never leaves Apple’s speech recognition.</li>
+</ul>
+
+<h2>Data retention and deletion</h2>
+<p>Deleting the app deletes your tasks, settings, and generated audio from your
+device. We keep no copy of your dictations. Server-side, the anonymous daily
+rate counter deletes itself within 48 hours; analytics events, crash reports,
+and subscription status are retained by Firebase and RevenueCat under their
+policies, keyed only to the anonymous ID. To have that data deleted, email us
+the request — we will remove it.</p>
+
+<h2>Children</h2>
+<p>TodoLot is not directed at children under 13, and we do not knowingly collect
+personal information from children.</p>
+
+<h2>Changes to this policy</h2>
+<p>If the app’s data practices change, this page will be updated and the
+effective date above will be revised.</p>
+
+<h2>Contact</h2>
+<p>Questions about privacy or the app:
+<a href="mailto:gorbatiukviktor@gmail.com">gorbatiukviktor@gmail.com</a></p>
+
+<footer>TodoLot — speak your tasks, hear them right on time.
+&nbsp;·&nbsp; <a href="terms.html">Terms of Use</a></footer>
+
+</body>
+</html>
