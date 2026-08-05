@@ -27,23 +27,38 @@
   }
   h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
   h2 { font-size: 1.2rem; margin-top: 2.2rem; }
+  h3 { font-size: 1.02rem; margin-top: 1.4rem; margin-bottom: 0.2rem; }
   .meta { color: var(--secondary); margin-top: 0; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
   ul { padding-left: 1.2rem; }
   li { margin: 0.35rem 0; }
+  table { border-collapse: collapse; width: 100%; margin-top: 0.6rem; font-size: 0.95rem; }
+  th, td { text-align: left; padding: 0.5rem 0.6rem; border-bottom: 1px solid var(--rule); vertical-align: top; }
+  th { color: var(--secondary); font-weight: 600; }
   footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--secondary); font-size: 0.9rem; }
 </style>
 </head>
 <body>
 
 <h1>TodoLot Privacy Policy</h1>
-<p class="meta">Effective date: August 3, 2026</p>
+<p class="meta">Effective date: August 5, 2026</p>
 
-<p>TodoLot is a voice-to-alarm to-do app for iOS made by an independent developer.
-Your tasks live on your device. There is no sign-up, no advertising, and your
-data is never sold. This page describes exactly what leaves your device, where
-it goes, and why.</p>
+<p>TodoLot is a voice-to-alarm to-do app for iOS made by an independent
+developer. Your tasks live on your device. There is no account to create, no
+advertising, and your personal data is never sold. This page describes exactly
+what leaves your device, where it goes, and why — in plain language.</p>
+
+<h2>At a glance</h2>
+<ul>
+  <li><strong>No sign-up.</strong> We never ask for your name, email, phone, or a password.</li>
+  <li><strong>Your tasks stay on your device.</strong> They are never uploaded to us.</li>
+  <li><strong>Only two things leave the app on purpose:</strong> the <em>text</em> of a
+  dictation (to turn it into tasks) and, if enabled, the <em>text</em> of an alarm phrase
+  (to generate a natural voice). Both go over encrypted connections.</li>
+  <li><strong>Everything else</strong> is anonymous, aggregate usage analytics and crash
+  reports, tied to a random ID — not to you.</li>
+</ul>
 
 <h2>What the app processes, and where</h2>
 
@@ -58,15 +73,16 @@ Your audio never reaches our servers or any other third party.</p>
 <p>The <em>text</em> of your dictation (never the audio) is sent over an encrypted
 connection to an AI service — <a href="https://www.anthropic.com/legal/privacy">Anthropic</a>
 or <a href="https://openai.com/policies/privacy-policy/">OpenAI</a> — which splits
-it into individual tasks and times. Along with the text, the request includes
-your dictation language, timezone, the current time, and the names of your task
-groups (so the AI can sort tasks into them). Requests may be routed through our
-lightweight relay server (hosted on
+it into individual tasks, times, and any advance reminders. Along with the text,
+the request includes your dictation language, timezone, the current time, and the
+names of your task groups (so the AI can sort tasks into them). Requests may be
+routed through our lightweight relay server (hosted on
 <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare</a>), which keeps
 API credentials off your device and enforces a daily rate limit using a random
 device identifier — a UUID generated on your device that is not linked to your
 name, email, or any account; its daily counters expire and are deleted
-automatically within 48 hours. We do not store or log your dictation text.</p>
+automatically within 48 hours. We do not store or log your dictation text, and
+we instruct these providers not to use it to train their models.</p>
 
 <h3>Natural alarm voice</h3>
 <p>If the natural alarm voice is enabled, the text of an alarm phrase (and of
@@ -80,12 +96,21 @@ voice is generated entirely on your device using Apple’s built-in text-to-spee
 <p>On first launch the app creates an anonymous user ID via
 <a href="https://firebase.google.com/support/privacy">Google Firebase</a>
 Authentication. It is a random identifier — no name, email, or password is ever
-asked for or collected. The app uses Firebase Analytics to understand how the
-app is used (events like app opens and screen views, plus device model, OS
-version, and coarse region — including steps of the setup and purchase flow,
-never the content of your tasks) and Firebase Crashlytics to receive crash reports.
-This data is linked to the anonymous ID, not to your identity, and is used only
-to improve the app.</p>
+asked for or collected. Using this anonymous ID, the app collects:</p>
+<ul>
+  <li><strong>Usage analytics</strong> (Firebase Analytics) to understand how the app is
+  used and how much it costs us to run — for example app opens and screen views;
+  the steps you take through setup and purchase; permission choices (granted or
+  denied); and simple counts such as how many tasks a dictation produced and how
+  many characters of speech were generated. These are <em>counts and event names
+  only — never the content, wording, or subject of your tasks or dictations.</em></li>
+  <li><strong>Crash reports</strong> (Firebase Crashlytics) so we can find and fix bugs.</li>
+  <li>Standard technical context that these Google SDKs collect automatically,
+  such as device model, operating-system version, and a coarse region derived
+  from your IP address.</li>
+</ul>
+<p>This data is linked to the anonymous ID, not to your identity, and is used
+only to operate and improve the app.</p>
 
 <h3>Purchases</h3>
 <p>Billing is handled entirely by Apple through the App Store — we never see
@@ -96,17 +121,50 @@ state, nothing more) with
 anonymous ID.</p>
 
 <h3>Tasks, alarms, and settings</h3>
-<p>Your tasks, alarm times, checklists, groups, and settings are stored locally
-on your device. If you use iCloud or device backups, this local data may be
-included in your backups, which are managed by Apple.</p>
+<p>Your tasks, alarm times, checklists, groups, reminders, and settings are
+stored locally on your device. If you use iCloud or device backups, this local
+data may be included in your backups, which are managed by Apple.</p>
+
+<h2>Who we share data with</h2>
+<p>We do not sell your data and do not share it for advertising. We share the
+minimum necessary with the service providers below, each acting on our behalf
+under its own privacy terms:</p>
+<table>
+  <tr><th>Provider</th><th>What it receives</th><th>Why</th></tr>
+  <tr><td>Apple</td><td>Speech audio/text (on-device or Apple servers); purchase &amp; billing data</td><td>Speech recognition; App Store payments</td></tr>
+  <tr><td>Anthropic / OpenAI</td><td>Dictation text + language, timezone, time, group names</td><td>Turn dictation into tasks</td></tr>
+  <tr><td>Cloudflare</td><td>Same request, plus a random device UUID</td><td>Relay that hides API keys and rate-limits</td></tr>
+  <tr><td>ElevenLabs</td><td>Alarm/briefing phrase text</td><td>Generate the natural voice</td></tr>
+  <tr><td>Google Firebase</td><td>Anonymous ID, analytics events, crash data, technical context</td><td>Analytics &amp; crash reporting</td></tr>
+  <tr><td>RevenueCat</td><td>Anonymous ID, subscription status</td><td>Unlock Pro across reinstalls</td></tr>
+</table>
 
 <h2>What we don’t do</h2>
 <ul>
   <li>No sign-up: we never ask for your name, email, or phone number.</li>
-  <li>No advertising and no ad networks.</li>
+  <li>No advertising and no ad networks; we do not track you across other apps or websites.</li>
   <li>No selling or sharing of personal data for marketing.</li>
   <li>Your dictation audio never leaves Apple’s speech recognition.</li>
+  <li>We never send the content of your tasks to analytics or crash tools.</li>
 </ul>
+
+<h2>Your rights and choices</h2>
+<p>Depending on where you live (for example under the EU/UK GDPR or the
+California CCPA/CPRA), you may have the right to access, correct, or delete your
+data, to object to certain processing, and not to be discriminated against for
+exercising these rights. Because we do not hold your name or email, we identify
+your records by the anonymous ID or device UUID associated with your app.
+You can:</p>
+<ul>
+  <li><strong>Stop analytics collection</strong> by turning off analytics tracking in your
+  iOS settings, or remove the anonymous data footprint by deleting the app.</li>
+  <li><strong>Delete your data</strong> — email us and we will delete the analytics,
+  crash, and subscription records associated with your anonymous ID.</li>
+  <li><strong>Manage or cancel your subscription</strong> in iOS Settings → your name →
+  Subscriptions.</li>
+</ul>
+<p>We do not “sell” or “share” personal information as those terms are defined
+under California law.</p>
 
 <h2>Data retention and deletion</h2>
 <p>Deleting the app deletes your tasks, settings, and generated audio from your
@@ -118,14 +176,15 @@ the request — we will remove it.</p>
 
 <h2>Children</h2>
 <p>TodoLot is not directed at children under 13, and we do not knowingly collect
-personal information from children.</p>
+personal information from children. If you believe a child has provided us data,
+contact us and we will delete it.</p>
 
 <h2>Changes to this policy</h2>
 <p>If the app’s data practices change, this page will be updated and the
 effective date above will be revised.</p>
 
 <h2>Contact</h2>
-<p>Questions about privacy or the app:
+<p>Questions about privacy or the app, or a data request:
 <a href="mailto:gorbatiukviktor@gmail.com">gorbatiukviktor@gmail.com</a></p>
 
 <footer>TodoLot — speak your tasks, hear them right on time.
