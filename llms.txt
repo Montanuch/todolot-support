@@ -1,6 +1,8 @@
 # TodoLot: Talking Reminders
 
-> TodoLot is a voice to-do list app for iPhone (iOS 26.5 or later) that turns what you say into real alarms. You dictate a brain-dump, AI splits it into separate tasks with times, and each task becomes a system alarm that rings and says the task out loud at the right moment, even on silent and in Focus mode. No account; tasks stay on the device.
+> TodoLot is a voice to-do list app for iPhone (iOS 26.5 or later) that turns what you say into real alarms. Made for forgetful brains and people with ADHD who swipe quiet reminders away: the alarm says the task itself, so it cannot be dismissed without knowing what it was. You dictate a brain-dump, AI splits it into separate tasks with times, and each task becomes a system alarm that rings and says the task out loud at the right moment, even on silent and in Focus mode. No account; tasks stay on the device.
+
+Pains it solves: swiping your own reminders away; alarms named "Alarm 3" that don't say what they are for; tasks that evaporate before you type them; remembering too late (missed appointments, late fees).
 
 Key facts:
 - Platform: iPhone, iOS 26.5+. App Store: https://apps.apple.com/app/id6797162832
