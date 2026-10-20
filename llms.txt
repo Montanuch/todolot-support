@@ -16,5 +16,7 @@ Key facts:
 ## Pages
 - [Home](https://montanuch.github.io/todolot-support/): what the app does, features, pricing, FAQ
 - [Support and FAQ](https://montanuch.github.io/todolot-support/support.html): alarms on silent/Focus, iOS requirements, languages, offline, cancel/refund/restore, delete data
+- [What's new](https://montanuch.github.io/todolot-support/whats-new.html): release notes by version with dates
+- [Press kit](https://montanuch.github.io/todolot-support/press.html): one-liner, boilerplate, key facts, icon, screenshots, voice samples
 - [Privacy Policy](https://montanuch.github.io/todolot-support/privacy.html): what leaves the device and to which providers
 - [Terms of Use](https://montanuch.github.io/todolot-support/terms.html): subscriptions, alarm reliability notice, AI content

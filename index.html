@@ -82,6 +82,7 @@
       ],
       "author": { "@id": "https://montanuch.github.io/todolot-support/#publisher" },
       "publisher": { "@id": "https://montanuch.github.io/todolot-support/#publisher" },
+      "releaseNotes": "https://montanuch.github.io/todolot-support/whats-new.html",
       "privacyPolicy": "https://montanuch.github.io/todolot-support/privacy.html",
       "termsOfService": "https://montanuch.github.io/todolot-support/terms.html"
     },
@@ -176,6 +177,13 @@
   .cta { display: inline-block; background: var(--accent); color: var(--accent-ink); font-weight: 700; padding: 0.75rem 1.3rem; border-radius: 999px; }
   .cta:hover { text-decoration: none; opacity: 0.92; }
   .cta-note { display: block; margin-top: 0.5rem; font-size: 0.9rem; color: var(--secondary); }
+  .hear { margin-top: 1.6rem; }
+  .hear h2 { margin-top: 0; }
+  .hear .meta { color: var(--secondary); margin: 0 0 0.6rem; }
+  .voices { display: grid; grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); gap: 0.8rem; }
+  .voices figure { margin: 0; background: var(--card); border-radius: 14px; padding: 0.9rem 1rem; min-width: 0; }
+  .voices figcaption { font-size: 0.95rem; margin-bottom: 0.5rem; }
+  .voices audio { width: 100%; max-width: 100%; }
   .steps { counter-reset: step; padding: 0; list-style: none; margin: 0; }
   .steps li { position: relative; padding-left: 2.6rem; margin: 0.9rem 0; }
   .steps li::before { counter-increment: step; content: counter(step); position: absolute; left: 0; top: 0.1rem; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 0.95rem; }
@@ -211,6 +219,17 @@ alarm and says the task out loud, even on silent, even in Focus.</p>
   <a class="cta" href="https://apps.apple.com/app/id6797162832">Download on the App Store</a>
   <span class="cta-note">Free to start · iPhone, iOS 26.5 or later · No account needed</span>
 </p>
+
+<div class="hear">
+  <h2>Hear it</h2>
+  <p class="meta">This is what an alarm sounds like. Two of the natural voices:</p>
+  <div class="voices">
+    <figure><figcaption><strong>Sarah</strong>, calm · “Morning run in the park. Shoes are by the door.”</figcaption>
+      <audio controls preload="none" src="audio/sample-sarah.mp3"></audio></figure>
+    <figure><figcaption><strong>Harry</strong>, drill sergeant · “Call the bank. It’s nine o’clock. No excuses.”</figcaption>
+      <audio controls preload="none" src="audio/sample-harry.mp3"></audio></figure>
+  </div>
+</div>
 
 <h2>Sound familiar?</h2>
 <div class="grid pains">
@@ -318,6 +337,8 @@ medical device.</p></details>
 
 <footer>TodoLot — speak your tasks, hear them right on time.
 &nbsp;·&nbsp; <a href="support.html">Support</a>
+&nbsp;·&nbsp; <a href="whats-new.html">What’s new</a>
+&nbsp;·&nbsp; <a href="press.html">Press kit</a>
 &nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a>
 &nbsp;·&nbsp; <a href="terms.html">Terms of Use</a>
 &nbsp;·&nbsp; <a href="mailto:vibeprogerai@gmail.com">vibeprogerai@gmail.com</a></footer>
