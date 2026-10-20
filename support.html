@@ -3,7 +3,59 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>TodoLot — Support</title>
+<title>TodoLot Support and FAQ</title>
+<meta name="description" content="TodoLot support: contact, and answers about talking alarms on silent and Focus, iOS requirements, dictation languages, offline use, free vs Pro, cancelling a subscription, refunds, restoring purchases and deleting data.">
+<link rel="canonical" href="https://montanuch.github.io/todolot-support/support.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TodoLot">
+<meta property="og:title" content="TodoLot Support and FAQ">
+<meta property="og:description" content="Contact and answers: alarms on silent and Focus, iOS requirements, languages, offline, free vs Pro, cancel, refund, restore, delete data.">
+<meta property="og:url" content="https://montanuch.github.io/todolot-support/support.html">
+<meta property="og:image" content="https://montanuch.github.io/todolot-support/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TodoLot Support and FAQ">
+<meta name="twitter:description" content="Contact and answers: alarms on silent and Focus, iOS requirements, languages, offline, free vs Pro, cancel, refund, restore, delete data.">
+<meta name="twitter:image" content="https://montanuch.github.io/todolot-support/img/og.jpg">
+<link rel="icon" href="img/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "@id": "https://montanuch.github.io/todolot-support/support.html#faq",
+  "about": { "@id": "https://montanuch.github.io/todolot-support/#app" },
+  "mainEntity": [
+    { "@type": "Question", "name": "An alarm didn’t ring or didn’t speak. What should I check?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Check that TodoLot is allowed to schedule alarms in iOS Settings → TodoLot, that the device was on and charged at the alarm time, and that the task was confirmed with a time (tasks in the Someday or Today list without a time do not ring). If the alarm rang with a generic tone instead of a voice, the voice file could not be prepared in time; the alarm still rings and the task text is shown on the alarm screen." } },
+    { "@type": "Question", "name": "Does TodoLot ring on silent mode or in Focus?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. TodoLot schedules real iOS alarms through the system alarm framework, the same kind the Clock app uses, so they ring at full volume even when the phone is on silent or in a Focus mode. Tasks you mark as quiet arrive as normal notifications instead." } },
+    { "@type": "Question", "name": "Which iPhones and iOS versions does TodoLot support?",
+      "acceptedAnswer": { "@type": "Answer", "text": "TodoLot requires an iPhone running iOS 26.5 or later. On iPad it runs as an iPhone-designed app." } },
+    { "@type": "Question", "name": "Which languages can I dictate in?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Any language that iOS speech recognition supports on your device; you choose the dictation language on the recording screen. Natural alarm voices are tuned for English, Russian, Spanish, Portuguese, French, German, Italian, Japanese, Chinese, Korean, Hindi and Arabic; other languages use the default voice." } },
+    { "@type": "Question", "name": "Does TodoLot work offline?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Tasks added by hand and all scheduled alarms work without a connection. Turning a dictation into tasks and generating a natural voice need the internet. If the network is unavailable, the alarm is built with the on-device system voice so it always rings." } },
+    { "@type": "Question", "name": "What is free and what does TodoLot Pro add?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Free: 3 voice captures a day, alarms spoken with the system voice, unlimited tasks added by hand. TodoLot Pro: unlimited voice captures, natural human voices and a custom wake-up sound. Pro is $12.99 per week or $149.99 per year with a 3-day free trial; prices may vary by region and are shown in the app before purchase." } },
+    { "@type": "Question", "name": "How do I cancel the subscription or get a refund?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cancel in iOS Settings → your name → Subscriptions → TodoLot. Deleting the app does not cancel a subscription. Refunds are handled by Apple at reportaproblem.apple.com." } },
+    { "@type": "Question", "name": "How do I restore a purchase on a new phone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Sign in with the same Apple Account, open TodoLot, then Settings → Subscription → Restore purchases, or tap Restore on the paywall." } },
+    { "@type": "Question", "name": "Do my tasks sync between devices?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. Tasks are stored on the device only; there is no account and no cloud sync. Device backups made by iOS may include them." } },
+    { "@type": "Question", "name": "How does the AI turn my dictation into tasks, and what does it see?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Your speech is transcribed by Apple’s iOS speech recognition. Only the resulting text, plus your language, time zone, current time and the names of your task groups, is sent to an AI service that splits it into tasks with times. The audio never leaves Apple’s speech recognition, and the text is not stored by TodoLot or used to train models." } },
+    { "@type": "Question", "name": "How do I delete my data?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Deleting the app removes all tasks, settings and generated audio from the device. To delete the anonymous analytics and subscription records, email vibeprogerai@gmail.com; records are identified by an anonymous ID, not by your name." } },
+    { "@type": "Question", "name": "Can I add a task with Siri?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Say “Add task in TodoLot” or “Remind me with TodoLot” to Siri, or use the “Add talking reminder” action in Shortcuts. The task is parsed the same way as a dictation in the app." } },
+    { "@type": "Question", "name": "Is TodoLot suitable for ADHD?",
+      "acceptedAnswer": { "@type": "Answer", "text": "TodoLot is built for forgetful brains in general: a loud alarm that says the task is harder to ignore than a silent banner, and capturing by voice removes the typing step. It is a convenience tool, not a medical device, and should not be the only reminder for medication or other critical obligations." } }
+  ]
+}
+</script>
 <style>
   :root {
     color-scheme: light dark;
@@ -25,8 +77,11 @@
     padding: 2.5rem 1.25rem 4rem;
     line-height: 1.6;
   }
+  .nav { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; font-size: 0.95rem; color: var(--secondary); margin-bottom: 2rem; flex-wrap: wrap; }
+  .nav > a { font-weight: 700; color: var(--text); }
   h1 { font-size: 1.9rem; margin-bottom: 0.25rem; }
   h2 { font-size: 1.2rem; margin-top: 2.2rem; }
+  h3 { font-size: 1.02rem; margin: 1.4rem 0 0.2rem; }
   .meta { color: var(--secondary); margin-top: 0; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
@@ -36,13 +91,14 @@
 </style>
 </head>
 <body>
+<nav class="nav"><a href="index.html">TodoLot</a> <span><a href="support.html">Support</a> · <a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="https://apps.apple.com/app/id6797162832">App Store</a></span></nav>
 
 <h1>TodoLot Support</h1>
 <p class="meta">Speak your tasks — hear them right on time.</p>
 
-<p>TodoLot is a voice-to-alarm to-do app for iOS made by an independent
-developer. Questions, bug reports, feature ideas, or help with a subscription —
-we read every message.</p>
+<p>TodoLot is a voice to-do list for iPhone that turns what you say into talking alarms,
+made by an independent developer. Questions, bug reports, feature ideas, or help with a
+subscription — we read every message.</p>
 
 <h2>Contact</h2>
 <p>Email us at
@@ -51,26 +107,81 @@ Please mention your iOS version and, if relevant, what you dictated and what
 you expected to happen — it helps us fix things faster. You can also reach us
 from the app: Settings → Feedback.</p>
 
-<h2>Common questions</h2>
-<ul>
-  <li><strong>An alarm didn’t speak or didn’t ring.</strong> Check that TodoLot is
-  allowed to schedule alarms (iOS Settings → TodoLot) and that the device was
-  on and charged at the alarm time. See also the alarm notes in the
-  <a href="terms.html">Terms of Use</a>.</li>
-  <li><strong>Manage or cancel a subscription.</strong> iOS Settings → your name →
-  Subscriptions. Deleting the app does not cancel a subscription. Refunds are
-  handled by Apple at
-  <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
-  <li><strong>Restore a purchase.</strong> In the app, open the paywall or
-  Settings → Subscription and tap Restore.</li>
-  <li><strong>Delete my data.</strong> See
-  <a href="index.html">Privacy Policy → Your rights and choices</a>, or just
-  email us.</li>
-</ul>
+<h2>Frequently asked questions</h2>
 
-<footer>TodoLot — speak your tasks, hear them right on time.
-&nbsp;·&nbsp; <a href="index.html">Privacy Policy</a>
-&nbsp;·&nbsp; <a href="terms.html">Terms of Use</a></footer>
+<h3>An alarm didn’t ring or didn’t speak. What should I check?</h3>
+<p>Check that TodoLot is allowed to schedule alarms (iOS Settings → TodoLot), that the
+device was on and charged at the alarm time, and that the task was confirmed with a time
+(tasks in the Someday or Today list without a time do not ring). If the alarm rang with a
+generic tone instead of a voice, the voice file could not be prepared in time; the alarm
+still rings and the task text is shown on the alarm screen. See also the alarm notes in the
+<a href="terms.html">Terms of Use</a>.</p>
+
+<h3>Does TodoLot ring on silent mode or in Focus?</h3>
+<p>Yes. TodoLot schedules real iOS alarms through the system alarm framework, the same kind
+the Clock app uses, so they ring at full volume even when the phone is on silent or in a
+Focus mode. Tasks you mark as quiet arrive as normal notifications instead.</p>
+
+<h3>Which iPhones and iOS versions are supported?</h3>
+<p>iPhone with iOS 26.5 or later. On iPad the app runs as an iPhone-designed app.</p>
+
+<h3>Which languages can I dictate in?</h3>
+<p>Any language that iOS speech recognition supports on your device; you choose the
+dictation language on the recording screen. Natural alarm voices are tuned for English,
+Russian, Spanish, Portuguese, French, German, Italian, Japanese, Chinese, Korean, Hindi and
+Arabic; other languages use the default voice.</p>
+
+<h3>Does TodoLot work offline?</h3>
+<p>Tasks added by hand and all scheduled alarms work without a connection. Turning a
+dictation into tasks and generating a natural voice need the internet. If the network is
+unavailable, the alarm is built with the on-device system voice so it always rings.</p>
+
+<h3>What is free and what does TodoLot Pro add?</h3>
+<p>Free: 3 voice captures a day, alarms spoken with the system voice, unlimited tasks added
+by hand. TodoLot Pro: unlimited voice captures, natural human voices and a custom wake-up
+sound. Pro is $12.99 per week or $149.99 per year with a 3-day free trial; prices may vary
+by region and are shown in the app before purchase.</p>
+
+<h3>How do I cancel the subscription or get a refund?</h3>
+<p>Cancel in iOS Settings → your name → Subscriptions → TodoLot. Deleting the app does not
+cancel a subscription. Refunds are handled by Apple at
+<a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h3>How do I restore a purchase on a new phone?</h3>
+<p>Sign in with the same Apple Account, open TodoLot, then Settings → Subscription → Restore purchases,
+or tap Restore on the paywall.</p>
+
+<h3>Do my tasks sync between devices?</h3>
+<p>No. Tasks are stored on the device only; there is no account and no cloud sync. Device
+backups made by iOS may include them.</p>
+
+<h3>How does the AI turn my dictation into tasks, and what does it see?</h3>
+<p>Your speech is transcribed by Apple’s iOS speech recognition. Only the resulting text,
+plus your language, time zone, current time and the names of your task groups, is sent to
+an AI service that splits it into tasks with times. The audio never leaves Apple’s speech
+recognition, and the text is not stored by TodoLot or used to train models. Details:
+<a href="privacy.html">Privacy Policy</a>.</p>
+
+<h3>How do I delete my data?</h3>
+<p>Deleting the app removes all tasks, settings and generated audio from the device. To
+delete the anonymous analytics and subscription records, email us; records are identified
+by an anonymous ID, not by your name. See
+<a href="privacy.html#rights">Privacy Policy → Your rights and choices</a>.</p>
+
+<h3>Can I add a task with Siri?</h3>
+<p>Yes. Say “Add task in TodoLot” or “Remind me with TodoLot” to Siri, or use the “Add talking
+reminder” action in Shortcuts. The task is parsed the same way as a dictation in the app.</p>
+
+<h3>Is TodoLot suitable for ADHD?</h3>
+<p>TodoLot is built for forgetful brains in general: a loud alarm that says the task is
+harder to ignore than a silent banner, and capturing by voice removes the typing step. It
+is a convenience tool, not a medical device, and should not be the only reminder for
+medication or other critical obligations.</p>
+
+<footer><a href="index.html">TodoLot</a> — speak your tasks, hear them right on time.
+&nbsp;·&nbsp; <a href="privacy.html">Privacy Policy</a>
+&nbsp;·&nbsp; <a href="terms.html">Terms of Use</a>
+&nbsp;·&nbsp; <a href="https://apps.apple.com/app/id6797162832">App Store</a></footer>
 
 </body>
 </html>

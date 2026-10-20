@@ -1,0 +1,18 @@
+# TodoLot: Talking Reminders
+
+> TodoLot is a voice to-do list app for iPhone (iOS 26.5 or later) that turns what you say into real alarms. You dictate a brain-dump, AI splits it into separate tasks with times, and each task becomes a system alarm that rings and says the task out loud at the right moment, even on silent and in Focus mode. No account; tasks stay on the device.
+
+Key facts:
+- Platform: iPhone, iOS 26.5+. App Store: https://apps.apple.com/app/id6797162832
+- Free tier: 3 voice captures a day, system-voice alarms, unlimited manual tasks.
+- TodoLot Pro: unlimited voice captures, natural human voices, custom wake-up sound. $12.99/week or $149.99/year (USD, varies by region), 3-day free trial, billed by Apple.
+- Dictation: any language supported by iOS speech recognition. Natural voices tuned for English, Russian, Spanish, Portuguese, French, German, Italian, Japanese, Chinese, Korean, Hindi, Arabic.
+- Features: repeating tasks, advance reminders ("a day before"), quiet notification-only tasks, someday list, morning briefing, month calendar with drag-and-drop, Siri ("Add task in TodoLot").
+- Privacy: only dictation text (not audio) and alarm phrase text leave the device; no ads, no selling of data, no account.
+- Support email: vibeprogerai@gmail.com
+
+## Pages
+- [Home](https://montanuch.github.io/todolot-support/): what the app does, features, pricing, FAQ
+- [Support and FAQ](https://montanuch.github.io/todolot-support/support.html): alarms on silent/Focus, iOS requirements, languages, offline, cancel/refund/restore, delete data
+- [Privacy Policy](https://montanuch.github.io/todolot-support/privacy.html): what leaves the device and to which providers
+- [Terms of Use](https://montanuch.github.io/todolot-support/terms.html): subscriptions, alarm reliability notice, AI content
